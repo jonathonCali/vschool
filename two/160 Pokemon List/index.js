@@ -1,25 +1,16 @@
 
 
 
-axios.get('https://api.vschool.io/pokemon')
-
-
-    .then(response => { 
-       
-        const pokemonList = response.data.objects[0].pokemon;
-        console.log(pokemonList);
-        for (let i = 0; i < pokemonList.length; i++) {
-            displayPokemon(pokemonList[i])
-        //     const h1 = document.createElement('h1'); 
-        //     h1.textContent = pokemonList[i].name;   
-        //     document.body.appendChild(h1);            
-        }
-    })
-    .catch(error => console.log(error));
-
-function displayPokemon(pokemon){
-        const h1 = document.createElement('h1'); 
-        h1.textContent = pokemon.name;  // Set the text content to the Pokemon's name
-        document.body.appendChild(h1);  // Append the h1 element to the document body
-    
+axios.get('https://api.vschool.io/pokemon') //load api site
+    .then(response => { //after axios, response
+            const list = response.data.objects[0].pokemon //set variable, pokemon is an element of object
+            for (let i = 0; i < list.length; i++) { //go thru all pokemon elements 
+                displayPokemon(list[i].name); //at every pokemon.name func starts
+                        }console.log(list) //log all pokemon of object to console
+                    })
+                .catch(error => console.log(error)); //log errors to console
+function displayPokemon(name) { //func of a pokemon.name
+    const h1 = document.createElement('h1'); //element created
+    h1.textContent = name// html created for pokemon.name 
+    document.body.appendChild(h1); //attatch this new html to body
 }
