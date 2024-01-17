@@ -71,7 +71,7 @@ axios.get("https://api.vschool.io/joncali/todo") //use axios to pull api
 })
 .catch(error => console.log(error)); //catch error send to dom
 
-document.getElementById('submit').addEventListener('click', function(e){ //on buttonclick, begin function of said event
+document.getElementById('submit').addEventListener('click', function(e){ //on buttonclick, begin function of click
     e.preventDefault(); //prevent reload
 
     const newTodo = { //new var
