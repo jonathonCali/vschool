@@ -1,0 +1,57 @@
+
+
+
+@media only screen and (min-width:600px){
+.container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        
+}
+
+}
+@media only screen and (max-width:600px) {
+.container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px 100px 100px;
+        
+}
+.box1 {
+    background-color: red; 
+    margin: 5px solid black;
+}
+.box2 {
+    background-color: red; 
+}
+.box3 {
+    background-color: red; 
+}
+.box4 {
+    background-color: red; 
+}
+.box5 {
+    background-color: blue; 
+}
+.box6 {
+    background-color: blue; 
+}
+.box7 {
+    background-color: green; 
+}
+.box8 {
+    background-color: green; 
+}
+.box9 {
+    background-color: blue; 
+}
+.box10 {
+    background-color: blue;
+}
+.box11 {
+    background-color: purple; 
+}
+.box12 {
+    background-color: purple; 
+}
+}
