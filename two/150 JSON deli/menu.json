@@ -1,0 +1,107 @@
+{
+    "appetizers": [
+        {
+            "name": "Code cruncher Rolls",
+            "ingredients": [
+                "house bread",
+                "toasted cheese",
+                "Herbs"
+            ],
+            "description": "Delicious crispy and cheesey rolls."
+        },
+        {
+            "name": "Pixel Pita and Hummus",
+            "ingredients": [
+                "House made hummus",
+                "Lemon Juice",
+                "Pita Bread"
+            ],
+            "description": "House made hummus and pita bread"
+        }
+    ],
+    "cold_sandwiches": [
+        {
+            "name": "BLT",
+            "ingredients": [
+                "Bacon",
+                "Lettuce",
+                "Tomato",
+                "Bread"
+            ],
+            "description": "Classic BLT."
+        },
+        {
+            "name": "veggie Wrap",
+            "ingredients": [
+                "Avocado",
+                "Mixed Greens",
+                "Flour Tortilla",
+                "Feta Cheese"
+            ],
+            "description": "A refreshing wrap with veggies and feta."
+        }
+    ],
+    "hot_sandwiches": [
+        {
+            "name": "Philly Cheesesteak",
+            "ingredients": [
+                "Ribeye Steak",
+                "Provolone",
+                "Onions",
+                "Hoagie Roll"
+            ],
+            "description": "Simple and delicious classic Philly cheesesteak."
+        },
+        {
+            "name": "Quantum Quesadilla",
+            "ingredients": [
+                "Chicken",
+                "Cheddar Cheese",
+                "Peppers",
+                "Tortilla"
+            ],
+            "description": "Spicy and cheesy quesidilla"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Fruit Salad",
+            "ingredients": [
+                "Mixed Berries",
+                "Mint",
+                "Honey"
+            ],
+            "description": "A healthy snack using seasonal fruits and berries"
+        },
+        {
+            "name": "Pie",
+            "ingredients": [
+                "Sugar",
+                "Butter",
+                "Flour",
+                "Vanilla Extract"
+            ],
+            "description": "Nice pie with simple ingredients"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Debug Dark Roast",
+            "ingredients": [
+                "Coffee Beans",
+                "Water"
+            ],
+            "description": "Strong dark roast coffee to debug your sleepy mornings."
+        },
+        {
+            "name": "Hyperlink Herbal Tea",
+            "ingredients": [
+                "Peppermint",
+                "Chamomile",
+                "Lavender",
+                "Hot Water"
+            ],
+            "description": "Soothing herbal tea to keep you calmly connected."
+        }
+    ]
+}
