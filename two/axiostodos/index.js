@@ -2,7 +2,7 @@
 
 axios.get("https://api.vschool.io/joncali/todo") //use axios to pull api
 .then(response => { //after axios is called
-    for(let i = 0; i < response.data.length; i++){ //for every response datum in the api
+    for(let i = 0; i < response.data.length; i++){ //for loop every response datum in the api
         const container = document.createElement('div'); //element created, <div>
             container.id = 'item-box'; //giving above id
         const itemId = response.data[i]._id //grabbing each [i]'s unique api ._id 
@@ -25,7 +25,11 @@ axios.get("https://api.vschool.io/joncali/todo") //use axios to pull api
         image.onerror = function(){ //if image doesn't load, call function
             image.alt = 'Image Unavailable' //display image alternative, text
         }
-
+            if(response.data[i].completed === true){
+                checkbox.checked = true;
+                h2.style.textDecoration = 'line-through';
+                description.style.textDecoration = 'line-through';
+            }
         h2.textContent = `Title: ${response.data[i].title}` //<h2>text content with 'title' element
         description.textContent = `Description: ${response.data[i].description}`//text content like above
         price.textContent = `Price: ${response.data[i].price}`//text content like above
@@ -71,7 +75,7 @@ axios.get("https://api.vschool.io/joncali/todo") //use axios to pull api
 })
 .catch(error => console.log(error)); //catch error send to dom
 
-document.getElementById('submit').addEventListener('click', function(e){ //on buttonclick, begin function of click
+document.getElementById('todoForm').addEventListener('submit', function(e){ //on buttonclick, begin function of click
     e.preventDefault(); //prevent reload
 
     const newTodo = { //new var
